@@ -1,0 +1,7 @@
+{
+  "appId": "com.gymforyou.app",
+  "appName": "GymForYou",
+  "webDir": "../frontend/dist",
+  "backgroundColor": "#09090B",
+  "server": { "androidScheme": "https" }
+}

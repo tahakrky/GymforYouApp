@@ -1,0 +1,235 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "project_name": "Personal Workout Tracker (Revamped)",
+  "app_archetype": "THE PERFORMANCE PRO (Elite Athleticism & Precision)",
+  "theme": "dark_default",
+  "language": "tr",
+  "branding": {
+    "rule": "STRICT PRIVATE PERSONAL APP - NO WORDMARK, NO BRAND NAME, NO FAKE IDENTITY",
+    "logo_url": "https://customer-assets-4nw71qhi.emergentagent.net/job_training-hub-725/artifacts/82e40e0cebcd8d21_dumbell%20logo.png",
+    "logo_usage": "Compact header mark (w-7 h-7 or w-8 h-8) on dark background. No text label beside it or anywhere in header.",
+    "banned_elements": [
+      "IRONLOG text or logos",
+      "Invented brand names (e.g. FitPulse, GymBro, Apex, IronPulse)",
+      "Cyberpunk HUD elements",
+      "Holographic panels",
+      "Glowing animated neon border beams",
+      "Random 3D floating meshes",
+      "Time tracking UI (stopwatches, seconds counters, rest timers, countdown rings)"
+    ]
+  },
+  "colors": {
+    "palette_description": "Deep obsidian and zinc neutrals with tactical lime green (#84CC16) kinetic triggers. Pure high-contrast data clarity.",
+    "surfaces": [
+      {
+        "name": "page",
+        "kind": "solid",
+        "bg": "#09090B",
+        "on_bg": "#FAFAFA",
+        "on_bg_muted": "#A1A1AA",
+        "roles": {
+          "accent": "#84CC16",
+          "accent_hover": "#A3E635",
+          "danger": "#EF4444",
+          "warning": "#F59E0B",
+          "border": "#27272A"
+        }
+      },
+      {
+        "name": "card_elevated",
+        "kind": "solid",
+        "bg": "#141416",
+        "on_bg": "#FFFFFF",
+        "on_bg_muted": "#A1A1AA",
+        "roles": {
+          "border": "#27272A",
+          "highlight_border": "#84CC16",
+          "disabled_bg": "#18181B",
+          "disabled_text": "#71717A"
+        }
+      },
+      {
+        "name": "card_interactive_selected",
+        "kind": "solid",
+        "bg": "#1A2210",
+        "on_bg": "#F4FCE3",
+        "on_bg_muted": "#BEF264",
+        "roles": {
+          "border": "#84CC16",
+          "badge_bg": "#84CC16",
+          "badge_text": "#09090B"
+        }
+      },
+      {
+        "name": "header_nav",
+        "kind": "glass",
+        "contrast_against": "#121215",
+        "guarantee": "backdrop-blur-xl bg-[#09090B]/85 border-b border-[#27272A]",
+        "on_bg": "#FAFAFA",
+        "on_bg_muted": "#A1A1AA"
+      },
+      {
+        "name": "bottom_nav",
+        "kind": "glass",
+        "contrast_against": "#121215",
+        "guarantee": "backdrop-blur-xl bg-[#0E0E11]/90 border-t border-[#27272A]",
+        "on_bg": "#FAFAFA",
+        "on_bg_muted": "#71717A",
+        "roles": {
+          "active_tab": "#84CC16",
+          "active_tab_bg": "#1E2B0E"
+        }
+      },
+      {
+        "name": "anatomy_viewer",
+        "kind": "solid",
+        "bg": "#0D0E12",
+        "on_bg": "#FFFFFF",
+        "on_bg_muted": "#94A3B8",
+        "roles": {
+          "container_border": "#1E293B",
+          "overlay_tint": "#84CC16"
+        }
+      }
+    ],
+    "accent": "#84CC16",
+    "on_accent": "#09090B",
+    "status_colors": {
+      "completed": "#84CC16",
+      "limit_reached": "#71717A",
+      "in_progress": "#38BDF8",
+      "progression_ready": "#EAB308"
+    }
+  },
+  "typography": {
+    "font_family_heading": "'Space Grotesk Variable', sans-serif",
+    "font_family_body": "'Plus Jakarta Sans Variable', sans-serif",
+    "font_import_instruction": "@import '@fontsource-variable/space-grotesk'; and @import '@fontsource-variable/plus-jakarta-sans';",
+    "turkish_diacritics_handling": "Always use standard CSS capitalization or raw Turkish strings. Avoid uppercase CSS transform that drops dotted-İ (e.g. use raw Turkish text directly like 'BİSEPS', 'TRİSEPS', 'ÖN KOL', 'GÖĞÜS', 'SIRT', 'BACAK', 'KARIN', 'KALÇA').",
+    "scale_px": {
+      "display": 48,
+      "h1": 36,
+      "h2": 28,
+      "h3": 20,
+      "body": 16,
+      "caption": 14
+    },
+    "hierarchy_rules": {
+      "hero_title": "text-3xl sm:text-4xl font-extrabold tracking-tight text-white",
+      "section_title": "text-xl sm:text-2xl font-bold tracking-tight text-white",
+      "muscle_card_title": "text-lg sm:text-xl font-bold tracking-tight text-white uppercase",
+      "stat_value": "text-2xl sm:text-3xl font-extrabold tracking-tight text-white",
+      "stat_label": "text-xs uppercase tracking-widest text-zinc-400 font-semibold",
+      "set_badge": "text-xs uppercase tracking-wider font-bold"
+    }
+  },
+  "entry_surfaces": {
+    "/": "immediate muscle selector grid — greeting & 'BUGÜN NE ÇALIŞIYORSUN?' heading top, 9 muscle choice cards below with live 0/2 counters",
+    "/workout": "focused mobile workout player — target exercise name, video, activation metrics, set completion actions",
+    "/progress": "anatomical body visualizer front/back toggle left/top, muscle stat metrics & PRs right/below",
+    "/history": "clean chronological session log list with clock times & completed exercises",
+    "/exercises": "equipment-aware 9-category exercise catalog with 10kg dumbbell limit badges",
+    "/music": "integrated dark Spotify embed player with direct launch trigger",
+    "/profile": "equipment and settings dashboard"
+  },
+  "anatomical_visualization": {
+    "front_image_url": "https://customer-assets-4nw71qhi.emergentagent.net/job_training-hub-725/artifacts/0c4c9f8c27454cdb_front.png",
+    "back_image_url": "https://customer-assets-4nw71qhi.emergentagent.net/job_training-hub-725/artifacts/9d4eca06681bb3ff_back.png",
+    "integration_strategy": "The uploaded images have white backgrounds with blue muscles. In the dark theme UI (#09090B), wrap the image in a container with 'mix-blend-mode: screen' or inverted lum filter (e.g. 'filter: invert(1) hue-rotate(180deg) brightness(0.9) contrast(1.15)') OR use 'mix-blend-mode: multiply' on a dedicated slate surface, or CSS mask with accent glow. Place interactive SVG hotspots/bounding boxes over the corresponding muscle regions so tapping any muscle triggers state highlighting with lime accent badge and detailed stats."
+  },
+  "core_flows_and_pages": {
+    "home_screen": {
+      "path": "/",
+      "intent": "Frictionless workout launch in 1 tap.",
+      "layout": "Greeting ('İyi çalışmalar') -> Headline 'BUGÜN NE ÇALIŞIYORSUN?' -> 9 Muscle Cards (BİSEPS, TRİSEPS, ÖN KOL, OMUZ, GÖĞÜS, SIRT, BACAK, KARIN, KALÇA).",
+      "card_states": {
+        "available": "Border #27272A, hover border #84CC16, shows '0 / 2 ANTRENMAN' or '1 / 2 ANTRENMAN'. Tapping opens workout immediately.",
+        "today_completed": "Border #84CC16/40, bg #141A0E, shows 'BUGÜN TAMAMLANDI' badge in lime green.",
+        "limit_reached": "Border #27272A/50, bg #121214, opacity-60, shows '2 / 2 — HAFTALIK LİMİT', disabled from starting."
+      }
+    },
+    "workout_screen": {
+      "path": "/workout",
+      "intent": "Distraction-free phone workout player. Exactly 2 exercises. NO TIMER UI.",
+      "components": [
+        "Header: Current Muscle Group + 'Egzersiz 1 / 2' indicator",
+        "Large YouTube exercise demonstration embed / video frame",
+        "Exercise Details: Name, Equipment Note (2x10kg Dambıl / Vücut Ağırlığı)",
+        "Kas Aktivasyonu Widget: Primary muscle bar (e.g. 85% Biceps) + Secondary (15% Ön Kol)",
+        "Set Progression Table: Target Sets x Reps (e.g. 3 Set x 10-12 Tekrar) + Weight (kg)",
+        "Set Completion Actions: Big tactical buttons per set -> 'SETİ TAMAMLA' turns to '✓ TAMAMLANDI' (Lime green bg)",
+        "Smart Progression Warnings: (1) '10 kg hafif geliyorsa: Tekrar sayısını artır veya tempoyu yavaşlat' / variation suggestion; (2) 'Hedef tekrar aralığına ulaşıldı: Ağırlık artırmaya hazırsın!'; (3) Exercise session note field ('Not Ekle')",
+        "Next Exercise / Finish Workout action button"
+      ],
+      "timer_ban_rule": "NEVER render stopwatches, workout timers, rest countdowns, or seconds counters. Backend records start/end ISO timestamps silently."
+    },
+    "progress_screen": {
+      "path": "/progress",
+      "intent": "Muscle breakdown and visual body anatomy inspector.",
+      "components": [
+        "Front / Back anatomical toggle tab",
+        "Dark-integrated anatomical figure with clickable muscle hotspot regions",
+        "Selected muscle stat card: 'Bu Hafta: X / 2', 'Toplam Set', 'Toplam Hacim (kg)', 'Kişisel Rekor (PR)'",
+        "Weekly consistency heatmap / bar indicators"
+      ]
+    },
+    "history_screen": {
+      "path": "/history",
+      "intent": "Verified workout log.",
+      "components": [
+        "Session Cards with Date and Real Clock Timestamps (e.g. '7 Ekim 2026 — Başlangıç 18:42, Bitiş 19:27')",
+        "Muscle tag (Lime outline badge)",
+        "Completed Exercises and Total Sets completed",
+        "Empty state: 'Henüz antrenman verisi yok.'"
+      ]
+    },
+    "exercise_library": {
+      "path": "/exercises",
+      "intent": "Equipment-aware exercise library (2x10kg dumbbells, flat bench, bodyweight).",
+      "components": [
+        "Category tabs for 9 muscle groups",
+        "Card per exercise with equipment required, difficulty, target activation %, and video preview"
+      ]
+    },
+    "music_screen": {
+      "path": "/music",
+      "intent": "Workout motivation audio integration.",
+      "components": [
+        "Spotify playlist embeds (Gym / Workout focus)",
+        "Direct action CTA: 'SPOTIFY'DA AÇ'"
+      ]
+    }
+  },
+  "bottom_navigation": {
+    "type": "fixed_bottom_bar",
+    "classes": "fixed bottom-0 left-0 right-0 z-50 bg-[#0E0E11]/90 backdrop-blur-xl border-t border-[#27272A] px-4 py-2",
+    "items": [
+      { "label": "Antrenman", "path": "/", "icon": "Dumbbell", "testid": "nav-workout" },
+      { "label": "Gelişim", "path": "/progress", "icon": "Activity", "testid": "nav-progress" },
+      { "label": "Geçmiş", "path": "/history", "icon": "Calendar", "testid": "nav-history" },
+      { "label": "Kütüphane", "path": "/exercises", "icon": "BookOpen", "testid": "nav-exercises" },
+      { "label": "Müzik", "path": "/music", "icon": "Music", "testid": "nav-music" },
+      { "label": "Profil", "path": "/profile", "icon": "User", "testid": "nav-profile" }
+    ]
+  },
+  "motion_and_interactions": {
+    "principles": "Fast, tactical, crisp feedback. Stiff springs, short durations (150ms-200ms).",
+    "button_press": "active:scale-[0.98] transition-transform duration-100 ease-out",
+    "card_hover": "hover:border-[#84CC16]/60 transition-colors duration-150 ease-out",
+    "set_complete_animation": "Subtle green burst / badge transition with instant state feedback"
+  },
+  "accessibility": {
+    "min_contrast": "All text tokens meet APCA / WCAG AA 4.5:1 against respective dark backgrounds (#09090B, #141416).",
+    "data_testids": "All interactive buttons, muscle selector cards, navigation tabs, set completion buttons, and input fields MUST contain explicit data-testid attributes (e.g. data-testid='muscle-card-biseps', data-testid='complete-set-btn-1', data-testid='start-workout-btn').",
+    "touch_targets": "Minimum 48px touch target height for all workout screen buttons and muscle selector cards."
+  },
+  "instructions_to_main_agent": [
+    "REVISE index.html / CSS entry: Ensure font imports use @fontsource-variable/space-grotesk and @fontsource-variable/plus-jakarta-sans. Ensure dark mode class is set on <html>.",
+    "PURGE IRONLOG & FAKE BRANDS: Check all components, headers, footers, titles, meta tags, and remove any mention of 'IRONLOG' or generic brand names. Header must only show the uploaded lime dumbbell icon from the specified URL.",
+    "TURKISH STRINGS THROUGHOUT: Ensure all texts are Turkish as specified in user_choices ('BUGÜN NE ÇALIŞIYORSUN?', 'Antrenmana Başla', 'Gelişim', 'Seti Tamamla', 'Henüz antrenman verisi yok.', 'Haftalık Limit', 'Kas Aktivasyonu', etc.).",
+    "NO TIMER UI: Verify there are NO stopwatch components, no countdown timers, no rest seconds in the workout player. Silently send start_time and finish_time to the backend upon workout start and completion.",
+    "WORKOUT FLOW: Open site -> 9 muscle cards -> 1-click start -> 2 exercises -> Set completion buttons -> Next exercise -> Complete session -> Save to database and redirect to history/progress.",
+    "EQUIPMENT PROGRESSION HINTS: Display contextual hints for 10kg dumbbells (weight ceiling warnings & rep range targets).",
+    "ANATOMICAL REFERENCE: Use the provided front and back images on the Progress page with a dark-optimized container treatment and clickable muscle zones."
+  ]
+}
